@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./main.js"></script>
+    <style>
+        input{
+            padding: 4px;
+            border-radius: 4px;
+            margin: 5px 0;
+            display: block;
+        }
+        .photo-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Photo Gallery!</h1>
+    <label>
+        Enter the id of photo
+        <input id="photoInput" type="number" name="photo-id">
+    </label>
+    <button id="request">Request</button>
+    <button id="add">Add</button>
+    <div class="photo-container">
+
+    </div>
+</body>
+
+</html>
