@@ -58,11 +58,7 @@ let newPhoto = {
 
 async function addPhoto(imgObj) {
     try {
-        let id = imgObj.id;
-
-        imgObj = JSON.stringify(imgObj);
-
-        const response = await fetch(`${url}${photoUrl}/${id}`, { method: 'PUT', body: imgObj});
+        const response = await fetch(`${url}${photoUrl}/${imgObj.id}`, { method: 'PUT', body: JSON.stringify(imgObj)});
 
         console.log(response);
     } catch (error) {
